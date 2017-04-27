@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+		<title>Mo</title>
+ 
+		<script type="text/javascript" src="js/phaser.js"></script>
+        <script type="text/javascript" src="js/Games/Game.js"></script>	
+        <script type="text/javascript" src="js/Games/Boot.js"></script>	
+        <script type="text/javascript" src="js/Games/Help.js"></script>	
+        <script type="text/javascript" src="js/Games/Preload.js"></script>
+		<script type="text/javascript" src="js/Games/Menu.js"></script>
+        <script type="text/javascript" src="js/Games/Control.js"></script>
+        <script type="text/javascript" src="js/Games/Credit.js"></script>
+
+        <script type="text/javascript" src="js/Games/Level.js"></script>
+		<script type="text/javascript" src="js/Creatures/Player.js"></script>		
+        <script type="text/javascript" src="js/Games/SpellTree.js"></script>
+        <script type="text/javascript" src="js/Spells/SpellBooks/SpellBook.js"></script>
+		<script type="text/javascript" src="js/Games/DamageText.js"></script>
+		<script type="text/javascript" src="js/Games/HealingText.js"></script>
+		<script type="text/javascript" src="js/Games/ItemManager.js"></script>
+		<script type="text/javascript" src="js/Games/CreatureManager.js"></script>
+		<script type="text/javascript" src="js/Games/ObjectManager.js"></script>
+		<script type="text/javascript" src="js/Games/MapLoader.js"></script>
+		<script type="text/javascript" src="js/Spells/FireBall.js"></script>
+		<script type="text/javascript" src="js/Spells/WaterBall.js"></script>
+		<script type="text/javascript" src="js/Spells/WoodHeal.js"></script>
+		<script type="text/javascript" src="js/Spells/FirePillar.js"></script>
+		<script type="text/javascript" src="js/Spells/WaterBallStrom.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/FireBallSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/WoodHealSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/WaterBallSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/WaterBallStromSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/WaterCannonSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/MetallicBoostSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/MetallicShiftSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/FireCannonSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/WallSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/SummonEarthDefenderSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/SummonEarthOffenderSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/SandTornadoSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/HealingLaserSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/HealingCircleSpellBook.js"></script>
+		<script type="text/javascript" src="js/Spells/SpellBooks/SmiteSpellBook.js"></script>
+
+
+
+
+
+		<script type="text/javascript" src="js/Spells/SpellsHelper.js"></script>
+		<script type="text/javascript" src="js/Spells/WaterCannon.js"></script>
+		<script type="text/javascript" src="js/Spells/MetallicBoost.js"></script>
+		<script type="text/javascript" src="js/Spells/MetallicShift.js"></script>
+		<script type="text/javascript" src="js/Spells/FireCannon.js"></script>
+		<script type="text/javascript" src="js/Spells/Wall.js"></script>
+		<script type="text/javascript" src="js/Spells/SandTornado.js"></script>
+		<script type="text/javascript" src="js/Spells/SandBall.js"></script>
+		<script type="text/javascript" src="js/Spells/HealingLaser.js"></script>
+		<script type="text/javascript" src="js/Spells/HealingCircle.js"></script>
+		<script type="text/javascript" src="js/Spells/Smite.js"></script>
+
+
+		<script type="text/javascript" src="js/Effects/FireExplosion.js"></script>
+		<script type="text/javascript" src="js/Effects/WaterExplosion.js"></script>
+		<script type="text/javascript" src="js/Effects/AttackEffect.js"></script>
+		<script type="text/javascript" src="js/Effects/Explosion_4.js"></script>
+		<script type="text/javascript" src="js/Effects/Explosion_5.js"></script>
+
+		<script type="text/javascript" src="js/Creatures/Creature.js"></script>
+		<script type="text/javascript" src="js/Creatures/fireBaby.js"></script>
+		<script type="text/javascript" src="js/Creatures/FireMinion.js"></script>
+		<script type="text/javascript" src="js/Creatures/FireBoss.js"></script>
+		<script type="text/javascript" src="js/Creatures/EarthDefender.js"></script>
+		<script type="text/javascript" src="js/Creatures/EarthOffender.js"></script>
+		<script type="text/javascript" src="js/Creatures/SandMinion.js"></script>
+		<script type="text/javascript" src="js/Creatures/WaterMinion.js"></script>
+		<script type="text/javascript" src="js/Creatures/EarthCrab.js"></script>
+
+
+		<script type="text/javascript" src="js/Objects/Objects.js"></script>
+		<script type="text/javascript" src="js/Objects/Signs/Signs.js"></script>
+		<script type="text/javascript" src="js/Objects/Signs/TutorialSign1.js"></script>
+		<script type="text/javascript" src="js/Objects/Signs/TutorialSign2.js"></script>
+		<script type="text/javascript" src="js/Objects/Signs/TutorialSign3.js"></script>
+		<script type="text/javascript" src="js/Objects/Signs/TutorialSign4.js"></script>
+		<script type="text/javascript" src="js/Objects/Signs/TutorialSign5.js"></script>
+		<script type="text/javascript" src="js/Objects/Signs/TutorialSign0.js"></script>
+		<script type="text/javascript" src="js/Objects/Spike.js"></script>
+
+		
+
+		<style>
+		  body {
+		    padding: 0px;
+		    margin: 0px;
+		  }
+		  </style>
+	</head>
+ 
+	<body>  
+		<!-- include the main game file -->
+		<script src="js/Games/main.js"></script>
+	</body>
+</html>
